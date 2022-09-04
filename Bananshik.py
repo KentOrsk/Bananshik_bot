@@ -2,7 +2,7 @@
 import csv
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
-import datetime
+import config
 from datetime import datetime, date, time
 
 def plural_days(n):
@@ -28,7 +28,7 @@ mes = {'янв':'1',
        'ноя':'11',
        'дек':'12',
        }
-TG_TOKEN="5601856257:AAED92UNP0ntfPvXz-LnZJG3IrD2MZzU3j8"
+
 bot = Bot(token=TG_TOKEN, parse_mode=types.ParseMode.HTML)
 dp=Dispatcher(bot)
 
